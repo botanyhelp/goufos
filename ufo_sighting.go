@@ -1,4 +1,4 @@
-package ufos
+package goufos
 // Here we see the header-line/column-names of one ufosighting as csv and one actual ufosighting
 //
 //sightedatyear,sightedatmonth,sightedatday,reportedat,locationcity,locationstate,shape,duration,description
@@ -22,3 +22,21 @@ type UfoSighting struct {
 func (u *UfoSighting) String() {
 	return string(u.reportedat)+u.locationcity+u.locationstate+u.shape+u.duration+u.description
 }
+
+// New returns a UfoSighting variable:
+func New(sightedatyear int, sightedatmonth int, sightedatday int, reportedat int, locationcity string, locationstate string, shape string, duration string, description string) (UfoSighting, err) {
+	u := UfoSighting{
+		sightedatyear: sightedatyear,
+		sightedatmonth: sightedatmonth,
+		sightedatday: sightedatday,
+		reportedat: reportedat,
+		locationcity: locationcity,
+		locationstate: locationstate,
+		shape: shape,
+		duration: duration,
+		description: description,
+	}
+
+	return u, nil
+}
+
