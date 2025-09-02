@@ -1,4 +1,8 @@
 package goufos
+
+import (
+	"fmt"
+)
 // Here we see the header-line/column-names of one ufosighting as csv and one actual ufosighting
 //
 //sightedatyear,sightedatmonth,sightedatday,reportedat,locationcity,locationstate,shape,duration,description
