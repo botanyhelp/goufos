@@ -47,15 +47,15 @@ func (u *UfoSighting) String() string {
 // New returns a UfoSighting variable:
 func New(sightedatyear int, sightedatmonth int, sightedatday int, reportedat int, locationcity string, locationstate string, shape string, duration string, description string) (UfoSighting, error) {
 	u := UfoSighting{
-		sightedatyear: sightedatyear,
-		sightedatmonth: sightedatmonth,
-		sightedatday: sightedatday,
-		reportedat: reportedat,
-		locationcity: locationcity,
-		locationstate: locationstate,
-		shape: shape,
-		duration: duration,
-		description: description,
+		Sightedatyear: sightedatyear,
+		Sightedatmonth: sightedatmonth,
+		Sightedatday: sightedatday,
+		Reportedat: reportedat,
+		Locationcity: locationcity,
+		Locationstate: locationstate,
+		Shape: shape,
+		Duration: duration,
+		Description: description,
 	}
 
 	return u, nil
