@@ -41,7 +41,7 @@ type UfoSighting struct {
 // UfoSighting implements fmt.Stringer interface for easy printing
 func (u *UfoSighting) String() string {
 	//return string(u.reportedat)+u.locationcity+u.locationstate+u.shape+u.duration+u.description
-	return fmt.Sprintf("%s", u.description)
+	return fmt.Sprintf("%s", u.Description)
 }
 
 // New returns a UfoSighting variable:
